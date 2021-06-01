@@ -11,4 +11,18 @@ class Javabuzz {
   _isDivisibleBy(number, divisor) {
     return (number % divisor === 0)
   }
+
+  says(number) {
+
+    if (this.isDivisibleByThreeAndFive(number)) {
+      return "Javabuzz";
+    }
+    if (this.isDivisibleByThree(number)) {
+      return "Java";
+    }
+    if (this.isDivisibleByFive(number)) {
+      return "Buzz";
+    }
+  }
+
 }
